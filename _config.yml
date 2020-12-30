@@ -5,7 +5,7 @@
 # Site
 title: Alison's Blog
 subtitle: "my thoughts and ... mostly only that"
-description: "thoughts, codes, quotes and more"
+description: "thoughts, codes, quotes and more..."
 keywords:
 author: Alison Galeon
 language: en
@@ -97,7 +97,7 @@ theme: cactus
 theme_config:
   nav:
     home: /
-    about: /about/
+    about: https://alisongaleon.com
     articles: /archives/
   social_links:
     github: https://github.com/xiomai
@@ -109,7 +109,7 @@ theme_config:
     enabled: true
     width: 50
     height: 50
-    url: /images/logo.png
+    url: /images/alison.png
     gravatar: false
 
   copyright:
@@ -124,3 +124,9 @@ theme_config:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ""
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
+  instanceName: "uniqueString"

@@ -6,23 +6,27 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "deploy:staging": "yarn build && now",
-    "deploy:production": "yarn build && now --prod",
-    "server": "hexo server",
-    "server:draft": "hexo server --draft"
+    "deploy:staging": "now",
+    "deploy:production": "now --prod",
+    "server": "cross-env NODE_ENV=development hexo server -p 4001",
+    "server:draft": "cross-env NODE_ENV=development hexo server --draft"
   },
   "hexo": {
     "version": "4.2.0"
   },
   "dependencies": {
     "hexo": "^4.0.0",
+    "hexo-browsersync": "^0.3.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-markdown-it": "^4.1.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-renderer-marked": "^2.0.0",
     "hexo-server": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
