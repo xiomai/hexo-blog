@@ -102,8 +102,8 @@ theme_config:
   social_links:
     github: https://github.com/xiomai
     # twitter: /
-    facebook: https://www.facebook.com/xiomailuv
-    linkedin: https://www.linkedin.com/in/alison-galeon-a54b7549/
+    facebook: https://www.facebook.com/ecomdevguy
+    linkedin: https://www.linkedin.com/in/alisongaleon/
     mail: mailto:me@alisongaleon.com
   logo:
     enabled: true
